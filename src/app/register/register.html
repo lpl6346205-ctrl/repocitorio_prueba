@@ -1,0 +1,119 @@
+<div class="min-h-screen bg-gray-900 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+  <div class="sm:mx-auto sm:w-full sm:max-w-md">
+    <h1 class="text-center text-3xl font-bold text-white">
+      Registro de Usuarios
+    </h1>
+  </div>
+
+  <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="bg-gray-800 py-8 px-6 shadow-lg rounded-lg border border-gray-700">
+      <form class="space-y-6">
+        <!-- Nombre -->
+        <div>
+          <label for="nombre" class="block text-sm font-medium text-gray-300">
+            Nombre
+          </label>
+          <div class="mt-1">
+            <input 
+              id="nombre"
+              name="nombre" 
+              type="text" 
+              placeholder="Nombre de usuario"
+              class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+          </div>
+        </div>
+
+        <!-- Apellido -->
+        <div>
+          <label for="apellido" class="block text-sm font-medium text-gray-300">
+            Apellido
+          </label>
+          <div class="mt-1">
+            <input 
+              id="apellido"
+              name="apellido" 
+              type="text" 
+              placeholder="Apellido de usuario"
+              class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+          </div>
+        </div>
+
+        <!-- Correo electrónico -->
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-300">
+            Correo electrónico
+          </label>
+          <div class="mt-1">
+            <input 
+              id="email"
+              name="email" 
+              type="email" 
+              placeholder="Correo electrónico de usuario"
+              class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+          </div>
+        </div>
+
+        <!-- Contraseña -->
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-300">
+            Contraseña
+          </label>
+          <div class="mt-1">
+            <input 
+              id="password"
+              name="password" 
+              type="password" 
+              placeholder="***********"
+              class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+          </div>
+        </div>
+
+        <!-- Confirmar Contraseña -->
+        <div>
+          <label for="confirmPassword" class="block text-sm font-medium text-gray-300">
+            Confirmar contraseña
+          </label>
+          <div class="mt-1">
+            <input 
+              id="confirmPassword"
+              name="confirmPassword" 
+              type="password" 
+              placeholder="***********"
+              class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+          </div>
+        </div>
+
+        <!-- Rol -->
+        <div>
+          <label for="rol" class="block text-sm font-medium text-gray-300">
+            Rol
+          </label>
+          <div class="mt-1">
+            <select 
+              id="rol"
+              name="rol"
+              class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none">>
+              <option value="" class="bg-gray-700">Seleccione rol de usuario</option>
+              <option value="admin" class="bg-gray-700">Administrador</option>
+              <option value="gerente" class="bg-gray-700">Gerente</option>
+              <option value="responsable" class="bg-gray-700">Responsable</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Botones -->
+        <div class="flex space-x-4">
+          <button
+            type="submit"
+            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-gray-800">
+            Registrar
+          </button>
+          
+          <button
+            type="button"
+            class="w-full flex justify-center py-2 px-4 border border-gray-600 rounded-md shadow-sm text-sm font-medium text-gray-300 bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:ring-offset-gray-800">
+            Cancelar
+          </button>
+        </div>
+      </form>
+    </div>
