@@ -1,10 +1,11 @@
-<main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    <div class="w-full max-w-md space-y-8 bg-white p-8 rounded-xl shadow-2xl border border-gray-100">
+<main class="min-h-screen bg-gray-900 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-md">
+        <div class="bg-gray-800 py-8 px-6 shadow-lg rounded-lg border border-gray-700">
         <div>
-            <h2 class="mt-6 text-center text-3xl font-extrabold text-primary-dark">
+            <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-300">
                 Sign in to your account
             </h2>
-            <p class="mt-2 text-center text-sm text-gray-600">
+            <p class="mt-2 text-center text-sm text-gray-300">
                 Access the internal Inventory System
             </p>
         </div>
@@ -16,13 +17,13 @@
                 <div>
                     <label for="email-address" class="sr-only">Email address</label>
                     <input id="email-address" name="email" type="email" autocomplete="email" required
-                        class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-lg focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-sm"
+                        class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                         placeholder="Email address">
                 </div>
-                <div>
+                <div class="mt-6">
                     <label for="password" class="sr-only">Password</label>
                     <input id="password" name="password" type="password" autocomplete="current-password" required
-                        class="appearance-none rounded-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-lg focus:outline-none focus:ring-primary-blue focus:border-primary-blue sm:text-sm"
+                        class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                         placeholder="Password">
                 </div>
             </div>
@@ -31,13 +32,13 @@
                 <div class="flex items-center">
                     <input id="remember-me" name="remember-me" type="checkbox"
                         class="h-4 w-4 text-primary-blue border-gray-300 rounded focus:ring-primary-blue">
-                    <label for="remember-me" class="ml-2 block text-sm text-gray-900">
+                    <label for="remember-me" class="ml-2 block text-sm text-gray-300">
                         Remember me
                     </label>
                 </div>
 
                 <div class="text-sm">
-                    <a href="#" class="font-medium text-primary-blue hover:text-indigo-500">
+                    <a href="#" class="font-medium text-white hover:text-indigo-500">
                         Forgot your password?
                     </a>
                 </div>
@@ -45,7 +46,7 @@
 
             <div>
                 <button type="submit"
-                    class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-primary-blue hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-blue transition duration-150 ease-in-out">
+                    class="w-full flex justify-center py-2 px-4 rounded-md shadow-sm text-sm font-medium text-white bg-gray-700 hover:bg-blue-600 transition duration-150 ease-in-out">
                     <span class="absolute left-0 inset-y-0 flex items-center pl-3">
                         <i data-lucide="log-in" class="h-5 w-5 text-indigo-300 group-hover:text-indigo-200"></i>
                     </span>
@@ -53,5 +54,6 @@
                 </button>
             </div>
         </form>
+        </div>
     </div>
 </main>

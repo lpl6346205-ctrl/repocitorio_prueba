@@ -1,9 +1,9 @@
-<header class="bg-white shadow-md sticky top-0 z-50">
+<header class="bg-gray-800 shadow-md sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <!-- Logo / App Name -->
       <div class="flex-shrink-0">
-        <span class="text-2xl font-bold text-primary-blue flex items-center">
+        <span class="text-2xl font-bold text-white flex items-center">
           <i data-lucide="scan" class="w-6 h-6 mr-2"></i>
           Inventory App
         </span>
@@ -12,19 +12,19 @@
       <!-- Desktop Navigation Links -->
       <nav class="hidden md:flex space-x-6">
         <a href="#"
-          class="text-primary-dark hover:text-primary-blue px-3 py-2 text-sm font-medium transition duration-150 ease-in-out rounded-lg">
+          class="text-white hover:text-primary-blue px-3 py-2 text-sm font-medium transition duration-150 ease-in-out rounded-lg">
           <i data-lucide="layout-dashboard" class="inline w-4 h-4 mr-1"></i> Dashboard
         </a>
         <a href="#"
-          class="text-primary-dark hover:text-primary-blue px-3 py-2 text-sm font-medium transition duration-150 ease-in-out rounded-lg">
+          class="text-white hover:text-primary-blue px-3 py-2 text-sm font-medium transition duration-150 ease-in-out rounded-lg">
           <i data-lucide="laptop" class="inline w-4 h-4 mr-1"></i> Devices
         </a>
         <a href="#"
-          class="text-primary-blue bg-secondary-gray/50 px-3 py-2 text-sm font-medium transition duration-150 ease-in-out rounded-lg">
+          class="text-white bg-secondary-gray/50 px-3 py-2 text-sm font-medium transition duration-150 ease-in-out rounded-lg">
           <i data-lucide="key-round" class="inline w-4 h-4 mr-1"></i> Licenses
         </a>
         <a href="#"
-          class="text-primary-dark hover:text-primary-blue px-3 py-2 text-sm font-medium transition duration-150 ease-in-out rounded-lg">
+          class="text-white hover:text-primary-blue px-3 py-2 text-sm font-medium transition duration-150 ease-in-out rounded-lg">
           <i data-lucide="bar-chart-3" class="inline w-4 h-4 mr-1"></i> Reports
         </a>
       </nav>
@@ -33,12 +33,12 @@
       <div class="flex items-center space-x-3">
         <!-- Register Button (Hidden on small mobile, visible on sm and up) -->
         <a href="#"
-          class="px-4 py-2 text-sm font-medium text-primary-dark border border-gray-300 rounded-lg hover:bg-secondary-gray transition duration-150 ease-in-out hidden sm:inline-flex">
+          class="px-4 py-2 text-sm font-medium text-white border border-gray-300 rounded-lg hover:bg-secondary-gray transition duration-150 ease-in-out hidden sm:inline-flex">
           Register
         </a>
         <!-- Login Button (Always visible) -->
         <a href="#"
-          class="px-4 py-2 text-sm font-medium text-white bg-primary-blue rounded-lg hover:bg-indigo-700 transition duration-150 ease-in-out">
+          class="px-4 py-2 text-sm font-medium text-white border border-gray-300 bg-primary-blue rounded-lg hover:bg-indigo-700 transition duration-150 ease-in-out">
           Login
         </a>
 
@@ -70,10 +70,12 @@
   </div>
 </header>
 
+<main class="flex-1 flex flex-col">
 <router-outlet />
+</main>
 
 <!-- FOOTER -->
-<footer class="bg-primary-dark text-white mt-12 py-8">
+<footer class="bg-gray-800 py-8 px-6 shadow-lg border border-gray-700 mt-auto">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
 
