@@ -1,0 +1,21 @@
+BASE DE DATOS CON DJANGO
+
+Crea y activa un entorno virtual:
+python -m venv venv
+venv\Scripts\activate   
+Instala las dependencias:
+pip install -r requirements.txt
+Configura la base de datos en settings.py:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'inventory_db',
+        'USER': 'postgres',
+        'PASSWORD': '1234',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+Ejecuta las migraciones:
+python manage.py makemigrations
+python manage.py migrate
