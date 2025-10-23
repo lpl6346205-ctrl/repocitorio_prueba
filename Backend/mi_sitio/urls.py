@@ -26,6 +26,8 @@ urlpatterns = [
     path('api/login/', views.login_api, name='login_api'),
     path('api/logout/', views.logout_api, name='logout_api'),
     path('api/auth-status/', views.check_auth_api, name='auth_status'),
-
+    path('employee_registration/', views.employee_registration, name = 'employee_registration'),
+    path('employees/', views.employee_list, name = 'employee_list'),
+    path('employees/<int:pk>/', views.edit_employee, name = 'edit_employee')
 ]
 

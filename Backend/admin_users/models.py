@@ -7,7 +7,6 @@ class AssetType(models.Model):
     def __str__(self):
         return self.name
 
-
 class SpecificAssetType(models.Model):
     name = models.CharField(max_length=100, unique=True)
     description = models.TextField(blank=True, null=True)
@@ -22,21 +21,29 @@ class Location(models.Model):
 
     def __str__(self):
         return self.name
-
-# ----------------- Responsible Persons -----------------
-class PersonResponsible(models.Model):
-    name = models.CharField(max_length=100)
-    email = models.EmailField(blank=True, null=True)
-
-    def __str__(self):
-        return self.name
-
+    
 # ----------------- Roles -----------------
 class Role(models.Model):
     name = models.CharField(max_length=100, unique=True)
 
     def __str__(self):
         return self.name
+    
+# ----------------- Employee roles -----------------
+class Role_employee(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+
+    def __str__(self):
+        return self.name
+
+# ----------------- Responsible Persons -----------------
+class PersonResponsible(models.Model):
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    role = models.ForeignKey(Role_employee, on_delete=models.PROTECT)
+
+    def __str__(self):
+        return f"{self.first_name} {self.last_name} ({self.role.name})" 
 
 # ----------------- System Users -----------------
 class SystemUser(models.Model):

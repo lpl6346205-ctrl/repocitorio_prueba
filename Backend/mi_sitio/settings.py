@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages', 
     'django.contrib.staticfiles',
     'rest_framework',
-    'mi_sitio.admin_users',
+    'admin_users.apps.AdminUsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'mi_sitio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'DataBase2',  
@@ -83,8 +83,14 @@ DATABASES = {
         'HOST': 'localhost',             
         'PORT': '5432',                  
     }
-}
+}"""
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
